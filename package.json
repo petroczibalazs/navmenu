@@ -1,0 +1,22 @@
+{
+  "name": "v1-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "./bin/v1-cli",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Balázs Petróczi",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^4.0.0",
+    "configstore": "^5.0.1",
+    "inquirer": "^7.1.0",
+    "inquirer-directory": "^2.2.0",
+    "inquirer-select-directory": "^1.2.0",
+    "minimist": "^1.2.5"
+  }
+}
