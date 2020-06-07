@@ -14,12 +14,13 @@ const msg =
 module.exports = () => {
 
     console.log('path: ' + path);
+    console.log(__dirname);
     // require('../../../gulpStarter')(path);
     // const directory = fs.readdirSync('../../').forEach( (name) => {
     //     console.log(name);
     // })
     // require('../../gulpfile')(path);
-    let validGulp = fs.existsSync('../../gulpfile.js');
+    let validGulp = fs.existsSync('../../../gulpfile.js');
     // let validDir = fs.existsSync('../../src/' + path);
     // let validFile = fs.existsSync('../../src/' + path + '/index.css.html');
     console.log('validGulp: ' + validGulp);   
