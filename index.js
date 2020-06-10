@@ -23,7 +23,7 @@ const setRootPrompt =
     name : "path",
     message : chalk.yellowBright.bgCyanBright(" Jelöld ki a gyökérmappát! "),
     onlyShowDir : true,
-    basePath : '../../src'      
+    basePath : './src'      
 };
 
 const menuPrompt = 
@@ -32,9 +32,9 @@ const menuPrompt =
     type : "list",
     message: chalk.bold.bgGreen.yellowBright(" Válassz az alábbiak közül! "),
     choices: [
-                {name : 'start Gulp', value : 'gulp'},
-                {name : 'start observers', value: 'observers'},
-                {name : 'use tools', value : 'tools'}
+                {name : 'gulp indítása', value : 'gulp'},
+                {name : 'figyelők indítása', value: 'observers'},
+                {name : 'eszköz választás', value : 'tools'}
              ]
 };
 
@@ -46,10 +46,10 @@ const chooseTool = () => {
                 name : 'muvelet',
                 type : 'list',
                 choices : [
-                    new inq.Separator(),
-                    'markers',
-                    { name: 'ed-containers', value :"edContainers"},
-                    'development',
+                    new inq.Separator(),                   
+                    { name: 'markerek mutatása / elrejtése', value :"markers"},
+                    { name: 'ed-container jelölők aktualizálása a style.scss fájlban', value :"edContainers"},
+                    { name: 'a fejlesztés lezárása / folytatása', value :"development"},                   
                     new inq.Separator()
                 ]
             },
@@ -57,7 +57,7 @@ const chooseTool = () => {
                 name : 'markers',
                 type : 'list',
                 message : chalk.bold.bgWhite.blue('-- Az elem csoport azonosítók mutatása - elrejtése? --'),
-                choices : [ { name : chalk.cyan('show'), value: 'show' }, { name: chalk.cyan('hide'), value: 'hide' }],
+                choices : [ { name : 'show', value: 'show' }, { name: 'hide', value: 'hide' }],
                 when : answers => answers.muvelet == 'markers'               
             },
             {
@@ -103,7 +103,7 @@ const main = () => {
 
             await inq.prompt(setRootPrompt)
                     .then( (answers) => {
-                        console.log("ANSWERS.path " + answers.path);
+                        // console.log("ANSWERS.path " + answers.path);
                         setRoot(answers.path.replace(/\\/g, '/'));
                     })
             }

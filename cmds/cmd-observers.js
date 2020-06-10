@@ -8,7 +8,8 @@ const msg =
 `;
 
 module.exports = () => {
-    console.log("Startingh observers!");
+    require('../lib/observer');
+    console.log("Starting observers!");
     console.log('Current root directory: ' + path);
 }
     

@@ -1,15 +1,34 @@
 {
-  "name": "navmenu",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "github:petroczibalazs/navmenu",
+  "_id": "navmenu@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/navmenu",
+  "_phantomChildren": {
+    "@types/color-name": "1.1.1"
   },
-  "bin" : "./bin/navmenu",
-  "keywords": [],
-  "author": "Balázs Petróczi",
-  "license": "MIT",
+  "_requested": {
+    "type": "git",
+    "raw": "github:petroczibalazs/navmenu",
+    "rawSpec": "github:petroczibalazs/navmenu",
+    "saveSpec": "github:petroczibalazs/navmenu",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:petroczibalazs/navmenu#0af4bd4f87829bd6bca9d381cc63507777d0f087",
+  "_spec": "github:petroczibalazs/navmenu",
+  "_where": "C:\\DEVELOPMENT\\V1-DEV-ENV2",
+  "author": {
+    "name": "Balázs Petróczi"
+  },
+  "bin": {
+    "navmenu": "bin/emaildev-api"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "boxen": "^4.2.0",
     "chalk": "^4.0.0",
@@ -18,5 +37,15 @@
     "inquirer-directory": "^2.2.0",
     "inquirer-select-directory": "^1.2.0",
     "minimist": "^1.2.5"
-  }
+  },
+  "deprecated": false,
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "navmenu",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }
